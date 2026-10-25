@@ -415,7 +415,11 @@ section[id],
 
 .mobile-nav {
   position: fixed;
-  inset: var(--header-h) 0 0 0;
+  top: var(--header-h);
+  left: 0;
+  right: 0;
+  height: calc(100vh - var(--header-h));
+  height: calc(100dvh - var(--header-h));
   background: var(--wine-950);
   padding: 24px 20px 40px;
   display: flex;
@@ -1297,8 +1301,8 @@ section[id],
    Gallery
    ============================================================ */
 .gallery {
-  background: var(--slate);
-  color: #fff;
+  background: var(--cream);
+  color: var(--ink);
 }
 .gallery-grid {
   display: grid;
@@ -2385,7 +2389,7 @@ main:focus {
    Gallery — linked dish cards
    ============================================================ */
 .gallery {
-  background: var(--slate);
+  background: var(--cream);
 }
 .gallery-filters {
   display: flex;
@@ -2402,26 +2406,26 @@ main:focus {
   height: 42px;
   padding: 0 18px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: transparent;
-  color: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--cream-300);
+  background: #fff;
+  color: var(--ink-2);
   font-weight: 700;
   font-size: 14px;
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 .gfilter:hover {
-  border-color: var(--saffron);
-  color: #fff;
+  border-color: var(--wine-500);
+  color: var(--wine-900);
 }
 .gfilter.is-active {
-  background: var(--saffron);
-  border-color: var(--saffron);
-  color: var(--wine-950);
+  background: var(--wine-800);
+  border-color: var(--wine-800);
+  color: #fff;
 }
 .gallery-hint {
   margin: 14px 0 28px;
   font-size: 14.5px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--muted);
 }
 .ggrid {
   display: grid;
